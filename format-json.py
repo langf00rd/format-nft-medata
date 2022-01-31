@@ -13,7 +13,7 @@ for file in sorted_files:
     index += 1
     print(file, index)
 
-    with open(os.path.join('/Users/langfordquarshie/py-projects/metadata', file), 'r+') as f:
+    with open(os.path.join(current_path, file), 'r+') as f:
         data = json.load(f)
         data['image'] = 'https://ipfs.infura.io/ipfs/QmSxDZ9Tmv3QPtQ4qNgn8KPFjtSMGHB37FFuJnM5ECfpef/' + str(index) + '.jpg'
         data['id'] = index

@@ -15,7 +15,7 @@ for file in sorted_files:
 
     with open(os.path.join(current_path, file), 'r+') as f:
         data = json.load(f)
-        data['image'] = 'https://ipfs.infura.io/ipfs/QmSxDZ9Tmv3QPtQ4qNgn8KPFjtSMGHB37FFuJnM5ECfpef/' + str(index) + '.jpg'
+        data['image'] = 'https://ipfs.infura.io/ipfs/1234/' + str(index) + '.jpg'
         data['id'] = index
         f.seek(0)
         json.dump(data, f, indent=4)
